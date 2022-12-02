@@ -1,0 +1,145 @@
+.card {
+  border-radius: 10px;
+  background-color: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 20px;
+  padding: 32px;
+
+  > .card-left {
+    display: flex;
+
+    .card-text {
+    margin-left: 40px;
+
+    > .card-title {
+      font-size: 18px;  
+      font-weight: 700;
+      line-height: 26px;
+
+      margin-bottom: 4px;
+
+      text-decoration: none;
+
+      &:hover {
+        color: #4661E6;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 23px;
+
+      margin-bottom: 12px;
+
+      color: #647196;
+    }
+
+    span {
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 18px;
+
+      background-color: #F2F4FF;
+      color: #4661E6;
+      padding: 5px 16px;
+      border-radius: 10px;
+
+      text-transform: capitalize;
+    }
+    }
+
+    > .upvotes-count {
+      font-size: 13px;
+      font-weight: 700;
+
+      background-color: #F2F4FE;
+      width: max-content;
+      height: max-content;
+      border-radius: 10px;
+
+      color: #3A4374;
+
+      padding: 8px;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: #CFD7FF;
+      }
+
+      > .upvotes-icon {
+        display: block;
+      }
+    }
+  }
+
+  .card-comment {
+
+    
+    > span {
+      display: flex;
+      align-items: center;
+      
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 23px;
+      
+      color: #3A4374;
+      
+      > .comment-icon {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+// Resposive 
+
+@media screen and (max-width: 570px) {
+  .card {
+
+    padding: 8px;
+
+    .card-left {
+
+      .upvotes-count {
+        font-size: 8px;
+        padding: 8px;
+      }
+
+      .card-text {
+        .card-title {
+          font-size: 12px;
+        }
+
+        p {
+          font-size: 10px;
+        }
+
+        span {
+          font-size: 8px;
+
+          padding: 4px 12px;
+
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .card-comment > span {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}

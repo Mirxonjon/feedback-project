@@ -1,0 +1,266 @@
+.navbar {
+  border-radius: 10px;
+  background-color: #373F68;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 24px;
+
+  width: 825px;
+
+  > .navbar-left {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 26px;
+
+      color: #fff;
+
+      text-transform: capitalize;
+
+      margin-left: 16px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+
+      margin-left: 38px;
+      
+      text-transform: capitalize;
+      
+      color: #fff;
+
+      cursor: pointer;
+    }
+  }
+
+  .link-add__feedback {
+    border-radius: 10px;
+    border: none;
+
+    background-color: #AD1FEA;  
+    color: #fff;
+
+    text-transform: capitalize;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+
+    padding: 12px 24px;
+
+    &:hover {
+      background-color: #C75AF6;
+    }
+  }
+}
+
+.filter-modal {
+  border-radius: 10px;
+  width: max-content;
+  height: max-content;
+  background-color: #fff;
+  padding: 12px 0px;
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 16px;
+  box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
+
+  > p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+
+    padding: 12px 24px;
+    margin: 0;
+    text-transform: capitalize;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+
+    color: #647196;
+
+    cursor: pointer;
+
+    &:hover {
+      color: #AD1FEA;
+      color: red;
+    }
+  }
+}
+
+.modal-hidden { 
+  display: none;
+}
+
+@media screen and (max-width: 770px) {
+  .navbar {
+    width: 100%;
+  }
+} 
+
+@media screen and (max-width: 570px) {
+  .navbar {
+
+    .navbar-left {
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    h3 {
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .link-add__feedback {
+    font-size: 10px;
+    padding: 10px 12px;
+  }
+
+  }
+} 
+
+@media screen and (max-width: 470px) {
+  .navbar {
+    padding: 10px 20px;
+
+    .navbar-left {
+
+    img {
+      width: 14px;
+      height: 14px;
+    }
+
+    h3 {
+      font-size: 10px;
+      margin-left: 4px;
+    }
+
+    p {
+      font-size: 8px;
+    }
+  }
+
+  .link-add__feedback {
+    font-size: 6px;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+  }
+} 
+
+@media screen and (max-width: 375px) {
+  .navbar {
+    border-radius: 0;
+    .navbar-left {
+      img {
+        display: none;
+      }
+
+      h3 {
+        display: none;
+      }
+
+      p {
+        font-size: 13px;
+        font-weight: 400;
+
+        margin-left: 0;
+
+        > span {
+          font-weight: 700;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .link-add__feedback {
+      font-size: 13px;
+      font-weight: 700;
+
+      padding: 10px 16px;
+      border-radius: 10px;
+    }
+  }
+}
+
+// Responsiveness of modals
+
+@media screen and (max-width: 570px) {
+  .filter-modal {
+    border-radius: 10px;
+    width: max-content;
+    height: max-content;
+    background-color: #fff;
+    padding: 12px 0px;
+    position: absolute;
+    margin-left: 185px;
+    margin-top: 4px;
+    box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .filter-modal {
+    border-radius: 10px;
+    width: max-content;
+    height: max-content;
+    background-color: #fff;
+    padding: 0px;
+    position: absolute;
+    margin-left: 135px;
+    margin-top: 4px;
+    box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
+
+    p {
+      font-size: 12px;
+      padding: 10px 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .filter-modal {
+    border-radius: 10px;
+    width: max-content;
+    height: max-content;
+    background-color: #fff;
+    padding: 0px;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 4px;
+    box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
+
+    p {
+      font-size: 12px;
+      padding: 4px 18px;
+    }
+  }
+}
+
+// Burge

@@ -1,0 +1,183 @@
+.header-top {
+  .burger-modal {
+    height: 100vh;
+    width: 70%;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    display: none;
+  }
+
+  .active {
+    height: 100vh;
+    width: 70%;
+    background-color: #F7F8FD;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    display: block;
+  }
+}
+.intro {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%);
+  width: 255px;
+  height: 137px;
+
+  border-radius: 10px;
+
+  margin-bottom: 24px;
+
+
+  > h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 62px;
+    margin-left: 24px;
+
+    text-transform: capitalize;
+
+    color: #fff;
+
+    > span {
+      font-size: 15px;
+      font-weight: 500;
+
+      display: block;
+    }
+  }
+}
+
+
+// Burger Menu
+
+.burger-menu {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+  display: none;
+}
+
+.burger-bar {
+  width: 20px;
+  height: 3px;
+
+  margin: 2px;
+  background-color: #fff;
+  border-radius: .5em;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: inherit;
+}
+
+// Animation 
+
+.burger-bar.clicked:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 2px);
+  transition: ease-out .3s;
+}
+
+.burger-bar.clicked:nth-child(2) {
+  transform:scale(0.1);
+  transition: out .3s;
+}
+
+.burger-bar.clicked:nth-child(3) {
+  transform: rotate(135deg) translate(-8px, 2px);
+  transition: ease-out .3s;
+}
+
+.burger-bar.unclicked {
+  transform: rotate(0) translate(0);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+
+// Responsive
+
+@media screen and (max-width: 770px) {
+  .intro {
+    height: 178px;
+    width: 223px;
+
+    padding-top: 50px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .intro {
+    width: 180px;
+    height: 140px;
+
+    > h1 {
+      padding-top: 42px;
+      margin-left: 16px;
+      font-size: 14px;
+
+      > span {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .intro {
+    width: 150px;
+    height: 120px;
+
+    > h1 {
+      padding-top: 22px;
+      margin-left: 16px;
+      font-size: 12px;
+      font-size: 500;
+
+      > span {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .intro {
+    width: 100%;
+    border-radius: 0;
+    height: max-content;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+
+    h1 {
+      padding: 0;
+      margin: 0;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 20px;
+      padding: 16px 0;
+
+      span {
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+
+    .hamburger-menu {
+      display: block;
+    }
+    .burger-menu {
+      display: flex;
+    }
+  }
+}

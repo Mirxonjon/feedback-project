@@ -1,0 +1,20 @@
+.link-back {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+
+  color: #647196;
+
+  text-transform: capitalize;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .link-back {
+    margin-left: 24px;
+  }
+}

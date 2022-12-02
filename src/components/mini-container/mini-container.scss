@@ -1,0 +1,13 @@
+.mini-container {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 0px 42px;
+  margin-top: 92px;
+}
+
+@media screen and (max-width: 375px) {
+  .mini-container {
+    margin-top: 34px;
+  }
+}

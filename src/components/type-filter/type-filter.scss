@@ -1,0 +1,81 @@
+.type-filter {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 8px;
+}
+
+.type-filter__styled-radio {
+  display: inline-block;
+  padding: 5px 16px;
+
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+
+  color: #4661E6;
+  background-color: #F2F4FF;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #CFD7FF;
+  }
+}
+
+.type-filter__radio:checked + .type-filter__styled-radio{
+  background-color: #4661E6;
+  color: #fff;
+}
+
+@media screen and (max-width: 770px) {
+  .type-filter {
+    width: 223px;
+    height: 178px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .type-filter {
+    width: 180px;
+    height: 140px;
+
+    .type-filter__styled-radio {
+      padding: 3px 12px;
+      font-size: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .type-filter {
+    width: 150px;
+    height: 120px;
+    // gap: 12px 14px;
+    padding: 14px;
+
+    .type-filter__styled-radio {
+      padding: 2px 8px;
+      font-size: 8px;
+    }
+  }
+}
+
+@media  screen and (max-width: 375px) {
+  .type-filter {
+    display: none;
+  }
+}
+
+@media  screen and (max-width: 290px) {
+  .type-filter {
+    position: absolute;
+    right: 0;
+    margin-right: 13%;
+    z-index: 1;
+  }
+}
